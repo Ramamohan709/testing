@@ -1,0 +1,10 @@
+services:
+  devops-practice:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: devops-practice:latest
+    container_name: devops-practice
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
